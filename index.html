@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="PJ Lobetti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-cyan.min.css" />    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculating The Surface Area, Volume, and The Insphere Radius of An Icosahedron.</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <center><h1>Calculating The Surface Area, Volume, and The Insphere Radius of An Icosahedron.</h1></center>
+    <p>
+      <center><h2>Enter The "a" or Edge Value of Your Icosahedron</h2></center>
+      <form action="javascript:buttonClicked()">
+        <label for="edge">"a" value/edge:</label>
+        <input type="number" step="any" id="edge" placeholder="'a'(cm)"><br><br>
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Calculate Values
+        </button>
+      </form>
+    </p>
+    <!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+      <div id="surfaceArea"></div>
+		</div>
+  </body>
+</html>
